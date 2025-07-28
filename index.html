@@ -12,116 +12,131 @@
   <body class="bg-stone-200 grid place-items-center h-screen w-full">
     <div class="w-48 h-96 bg-zinc-950 rounded-2xl grid place-items-bottom">
       <div id="notification-bar">
-        <p class="text-white">Date</p>
+        <p id="date" class="text-white px-3 py-2 text-[10px]">Date</p>
         <!-- <img src="icons/signal-alt-2.svg" class="text-white" /> -->
       </div>
-      <div class="mt-10 text-right px-3">
-        <label id="calculation" class="text-white text-sm w-full"
-          >Calculation</label
-        >
-        <h3 type="text" id="output" class="text-white text-right text-3xl">
-          Nishant
-        </h3>
+      <div class="mt-8 text-right px-3 overflow-auto">
+        <label id="calculation" class="text-white text-sm w-full"></label>
+        <h3 type="text" id="output" class="text-white text-right text-3xl"></h3>
       </div>
       <div class="mt-auto w-48 h-60 bg-neutral-800 rounded-2xl">
-        <div class="px-3 py-4 grid grid-cols-4 text-sm/2">
+        <div class="px-3 py-4 grid grid-cols-4 gap-2 text-sm/2">
           <button
-            class="bg-neutral-850 text-teal-300 rounded-lg px-3 py-4 shadow-lg"
+            onclick="clearAll()"
+            class="bg-neutral-850 text-teal-300 rounded-lg px-2 py-3 shadow-lg"
           >
             AC
           </button>
           <button
-            class="bg-neutral-850 text-teal-300 rounded-lg px-3 py-4 shadow-lg"
+            class="bg-neutral-850 text-teal-300 rounded-lg px-2 py-3 shadow-lg"
           >
             +/-
           </button>
           <button
-            class="bg-neutral-850 text-teal-300 rounded-lg px-3 py-4 shadow-lg"
+            onclick="mod()"
+            class="bg-neutral-850 text-teal-300 rounded-lg px-2 py-2 shadow-lg"
           >
             %
           </button>
           <button
-            class="bg-neutral-850 text-red-400 rounded-lg px-3 py-4 shadow-lg"
+            onclick="div()"
+            class="bg-neutral-850 text-red-400 rounded-lg px-2 py-3 shadow-lg"
           >
             ÷
           </button>
           <button
-            class="bg-neutral-850 text-white rounded-lg px-3 py-4 shadow-lg"
+            onclick="makeCalc(7)"
+            class="bg-neutral-850 text-white rounded-lg px-2 py-3 shadow-lg"
           >
             7
           </button>
           <button
-            class="bg-neutral-850 text-white rounded-lg px-3 py-4 shadow-lg"
+            onclick="makeCalc(8)"
+            class="bg-neutral-850 text-white rounded-lg px-2 py-3 shadow-lg"
           >
             8
           </button>
           <button
-            class="bg-neutral-850 text-white rounded-lg px-3 py-4 shadow-lg"
+            onclick="makeCalc(9)"
+            class="bg-neutral-850 text-white rounded-lg px-2 py-3 shadow-lg"
           >
             9
           </button>
           <button
-            class="bg-neutral-850 text-red-400 rounded-lg px-3 py-4 shadow-lg"
+            onclick="mul()"
+            class="bg-neutral-850 text-red-400 rounded-lg px-2 py-3 shadow-lg"
           >
             x
           </button>
           <button
-            class="bg-neutral-850 text-white rounded-lg px-3 py-4 shadow-lg"
+            onclick="makeCalc(4)"
+            class="bg-neutral-850 text-white rounded-lg px-2 py-3 shadow-lg"
           >
             4
           </button>
           <button
+            onclick="makeCalc(5)"
             class="bg-neutral-850 text-white rounded-lg px-3 py-4 shadow-lg"
           >
             5
           </button>
           <button
-            class="bg-neutral-850 text-white rounded-lg px-3 py-4 shadow-lg"
+            onclick="makeCalc(6)"
+            class="bg-neutral-850 text-white rounded-lg px-2 py-3 shadow-lg"
           >
             6
           </button>
           <button
-            class="bg-neutral-850 text-red-400 rounded-lg px-3 py-4 shadow-lg"
+            onclick="sub()"
+            class="bg-neutral-850 text-red-400 rounded-lg px-2 py-3 shadow-lg"
           >
             -
           </button>
           <button
-            class="bg-neutral-850 text-white rounded-lg px-3 py-4 shadow-lg"
+            onclick="makeCalc(1)"
+            class="bg-neutral-850 text-white rounded-lg px-2 py-3 shadow-lg"
           >
             1
           </button>
           <button
-            class="bg-neutral-850 text-white rounded-lg px-3 py-4 shadow-lg"
+            onclick="makeCalc(2)"
+            class="bg-neutral-850 text-white rounded-lg px-2 py-3 shadow-lg"
           >
             2
           </button>
           <button
-            class="bg-neutral-850 text-white rounded-lg px-3 py-4 shadow-lg"
+            onclick="makeCalc(3)"
+            class="bg-neutral-850 text-white rounded-lg px-2 py-3 shadow-lg"
           >
             3
           </button>
           <button
-            class="bg-neutral-850 text-red-400 rounded-lg px-3 py-4 shadow-lg"
+            onclick="add()"
+            class="bg-neutral-850 text-red-400 rounded-lg px-2 py-3 shadow-lg"
           >
             +
           </button>
           <button
-            class="bg-neutral-850 text-white rounded-lg px-3 py-4 shadow-lg"
+            onclick="del()"
+            class="bg-neutral-850 text-white rounded-lg px-2 py-3 shadow-lg"
           >
             &larr;
           </button>
           <button
-            class="bg-neutral-850 text-white rounded-lg px-3 py-4 shadow-lg"
+            onclick="makeCalc(0)"
+            class="bg-neutral-850 text-white rounded-lg px-2 py-3 shadow-lg"
           >
             0
           </button>
           <button
-            class="bg-neutral-850 text-white rounded-lg px-3 py-4 shadow-lg"
+            onclick="dot()"
+            class="bg-neutral-850 text-white rounded-lg px-2 py-3 shadow-lg"
           >
             .
           </button>
           <button
-            class="bg-neutral-850 text-red-400 rounded-lg px-3 py-4 shadow-lg"
+            onclick="output()"
+            class="bg-neutral-850 text-red-400 rounded-lg px-2 py-3 shadow-lg"
           >
             =
           </button>
