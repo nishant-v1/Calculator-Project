@@ -10,8 +10,6 @@ document.getElementById("date").innerHTML =
   dt.getHours() + ":" + dt.getMinutes();
 
 // Code for Calculation
-
-// Code for Calculation
 document.getElementById("calculation").innerHTML = finalTotal;
 
 function makeCalc(num) {
