@@ -10,10 +10,122 @@
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
   </head>
   <body class="bg-stone-200 grid place-items-center h-screen w-full">
-    <div class="w-48 h-96 bg-zinc-950 rounded-2xl">
+    <div class="w-48 h-96 bg-zinc-950 rounded-2xl grid place-items-bottom">
       <div id="notification-bar">
         <p class="text-white">Date</p>
-        <img src="icons/signal-alt-2.svg" class="text-white" />
+        <!-- <img src="icons/signal-alt-2.svg" class="text-white" /> -->
+      </div>
+      <div class="mt-10 text-right px-3">
+        <label id="calculation" class="text-white text-sm w-full"
+          >Calculation</label
+        >
+        <h3 type="text" id="output" class="text-white text-right text-3xl">
+          Nishant
+        </h3>
+      </div>
+      <div class="mt-auto w-48 h-60 bg-neutral-800 rounded-2xl">
+        <div class="px-3 py-4 grid grid-cols-4 text-sm/2">
+          <button
+            class="bg-neutral-850 text-teal-300 rounded-lg px-3 py-4 shadow-lg"
+          >
+            AC
+          </button>
+          <button
+            class="bg-neutral-850 text-teal-300 rounded-lg px-3 py-4 shadow-lg"
+          >
+            +/-
+          </button>
+          <button
+            class="bg-neutral-850 text-teal-300 rounded-lg px-3 py-4 shadow-lg"
+          >
+            %
+          </button>
+          <button
+            class="bg-neutral-850 text-red-400 rounded-lg px-3 py-4 shadow-lg"
+          >
+            ÷
+          </button>
+          <button
+            class="bg-neutral-850 text-white rounded-lg px-3 py-4 shadow-lg"
+          >
+            7
+          </button>
+          <button
+            class="bg-neutral-850 text-white rounded-lg px-3 py-4 shadow-lg"
+          >
+            8
+          </button>
+          <button
+            class="bg-neutral-850 text-white rounded-lg px-3 py-4 shadow-lg"
+          >
+            9
+          </button>
+          <button
+            class="bg-neutral-850 text-red-400 rounded-lg px-3 py-4 shadow-lg"
+          >
+            x
+          </button>
+          <button
+            class="bg-neutral-850 text-white rounded-lg px-3 py-4 shadow-lg"
+          >
+            4
+          </button>
+          <button
+            class="bg-neutral-850 text-white rounded-lg px-3 py-4 shadow-lg"
+          >
+            5
+          </button>
+          <button
+            class="bg-neutral-850 text-white rounded-lg px-3 py-4 shadow-lg"
+          >
+            6
+          </button>
+          <button
+            class="bg-neutral-850 text-red-400 rounded-lg px-3 py-4 shadow-lg"
+          >
+            -
+          </button>
+          <button
+            class="bg-neutral-850 text-white rounded-lg px-3 py-4 shadow-lg"
+          >
+            1
+          </button>
+          <button
+            class="bg-neutral-850 text-white rounded-lg px-3 py-4 shadow-lg"
+          >
+            2
+          </button>
+          <button
+            class="bg-neutral-850 text-white rounded-lg px-3 py-4 shadow-lg"
+          >
+            3
+          </button>
+          <button
+            class="bg-neutral-850 text-red-400 rounded-lg px-3 py-4 shadow-lg"
+          >
+            +
+          </button>
+          <button
+            class="bg-neutral-850 text-white rounded-lg px-3 py-4 shadow-lg"
+          >
+            &larr;
+          </button>
+          <button
+            class="bg-neutral-850 text-white rounded-lg px-3 py-4 shadow-lg"
+          >
+            0
+          </button>
+          <button
+            class="bg-neutral-850 text-white rounded-lg px-3 py-4 shadow-lg"
+          >
+            .
+          </button>
+          <button
+            class="bg-neutral-850 text-red-400 rounded-lg px-3 py-4 shadow-lg"
+          >
+            =
+          </button>
+        </div>
       </div>
     </div>
     <script src="script.js"></script>
